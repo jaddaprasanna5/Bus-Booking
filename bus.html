@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CityRide - Book Your Bus</title>
+    <link rel="stylesheet" href="./bus.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">🚌 CityRide</div>
+        <nav>
+            <button id="loginBtn">Login</button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Travel Across Cities, Comfortably</h1>
+        <p>Safe, Affordable & Fast Bus Booking</p>
+        <button id="exploreBtn">Explore Buses</button>
+    </section>
+
+    <!-- Search Section -->
+    <section id="search" class="search-section">
+        <h2>Search Buses</h2>
+        <div class="search-box">
+            <select id="fromCity">
+                <option value="">From City</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Bangalore">Bangalore</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Vijayawada">Vijayawada</option>
+            </select>
+
+            <select id="toCity">
+                <option value="">To City</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Bangalore">Bangalore</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Vijayawada">Vijayawada</option>
+            </select>
+
+            <input type="date" id="travelDate">
+
+            <select id="passengers">
+                <option value="1">1 Passenger</option>
+                <option value="2">2 Passengers</option>
+                <option value="3">3 Passengers</option>
+                <option value="4">4 Passengers</option>
+                <option value="5">5 Passengers</option>
+            </select>
+
+            <button id="searchBtn">Search Buses</button>
+        </div>
+        <p id="errorMessage" class="error"></p>
+        <div id="busResults" class="results"></div>
+    </section>
+
+    <!-- Popular Trips -->
+    <section class="popular">
+        <h2>Popular Routes</h2>
+        <div class="trip-cards">
+            <div class="trip" onclick="fillTrip('Hyderabad','Bangalore')">Hyderabad → Bangalore</div>
+            <div class="trip" onclick="fillTrip('Hyderabad','Vijayawada')">Hyderabad → Vijayawada</div>
+            <div class="trip" onclick="fillTrip('Bangalore','Chennai')">Bangalore → Chennai</div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking-section">
+        <h2>Your Booking</h2>
+        <div id="bookingDetails">
+            <p class="no-booking">No booking yet. Search and book a bus to see details here.</p>
+        </div>
+
+        <!-- PASSENGER FORM ADDED HERE -->
+        <div id="passengerFormContainer" style="display: none;">
+            <h2>Passenger Details</h2>
+            <p class="form-subtitle">Enter details for all passengers - Ticket will be sent on this</p>
+            <form id="passengerForm">
+                <div id="passengerFields"></div>
+                <p id="passengerError" class="error-text"></p>
+                <button type="submit" class="confirm-btn">Pay & Confirm Booking ₹<span id="finalTotal">0</span></button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal" class="close">&times;</span>
+            <h3>Login to CityRide</h3>
+            <p style="font-size:12px; color:#666;">Demo: ID = admin / Password = 1234</p>
+            <input type="text" id="loginId" placeholder="Enter ID">
+            <input type="password" id="loginPassword" placeholder="Enter Password">
+            <p id="loginError" class="error"></p>
+            <button id="submitLogin">Login</button>
+        </div>
+    </div>
+
+    <script src="./bus.js"></script>
+</body>
+</html>
