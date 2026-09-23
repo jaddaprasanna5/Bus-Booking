@@ -19,7 +19,7 @@ After publishing, your link will be:
 
 ### How to Run
 1. Download the 3 files
-2. Open `city-ride.html` in Chrome
+2. Open `bus.html` in Chrome
 
 ### Author
 **JADDA PRASANNA ANJANEYULU**
