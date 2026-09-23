@@ -1,0 +1,9 @@
+[
+  { "id": 1, "name": "CityRide Express", "from": "Hyderabad", "to": "Vijayawada", "time": "06:00 AM", "duration": "6h 30m", "price": 499, "seats": 32 },
+  { "id": 2, "name": "CityRide Deluxe", "from": "Hyderabad", "to": "Vijayawada", "time": "10:00 PM", "duration": "7h", "price": 699, "seats": 28 },
+  { "id": 3, "name": "CityRide Super Fast", "from": "Hyderabad", "to": "Bangalore", "time": "08:00 PM", "duration": "10h", "price": 799, "seats": 20 },
+  { "id": 4, "name": "CityRide AC Sleeper", "from": "Vijayawada", "to": "Visakhapatnam", "time": "09:30 PM", "duration": "8h", "price": 599, "seats": 15 },
+  { "id": 5, "name": "CityRide Express", "from": "Bangalore", "to": "Chennai", "time": "07:00 AM", "duration": "6h", "price": 549, "seats": 30 },
+  { "id": 6, "name": "CityRide Deluxe", "from": "Hyderabad", "to": "Chennai", "time": "06:30 PM", "duration": "12h", "price": 899, "seats": 25 },
+  { "id": 7, "name": "CityRide Indra", "from": "Chennai", "to": "Visakhapatnam", "time": "08:00 PM", "duration": "16h", "price": 899, "seats": 25 }
+]
