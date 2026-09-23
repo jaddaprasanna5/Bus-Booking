@@ -13,9 +13,9 @@ After publishing, your link will be:
 - Fast and simple design
 
 ### Tech Stack
-- HTML5 - `city-ride.html`
-- CSS3 - `city-ride.css`
-- JavaScript - `city-ride.js`
+- HTML5 - `bus.html`
+- CSS3 - `bus.css`
+- JavaScript - `bus.js`
 
 ### How to Run
 1. Download the 3 files
